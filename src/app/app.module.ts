@@ -6,18 +6,21 @@ import { AppComponent } from './app.component';
 import { CandidatesComponent } from './candidates/candidates.component';
 
 import { CandidateDetailComponent } from './candidate-detail/candidate-detail.component';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CandidatesComponent,
-    CandidateDetailComponent
+    CandidateDetailComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [// no need to place any providers due to the `providedIn` flag...
+     ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
