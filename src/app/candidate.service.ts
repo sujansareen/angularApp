@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import {Candidate} from './candidate';
 import {CANDIDATES} from './mock-candidates';
+import {CANDIDATES1} from './expData';
 import {Observable, of} from 'rxjs';
 import {MessageService} from './message.service';
 
@@ -13,7 +14,7 @@ export class CandidateService {
 
   getCandidates(): Observable<Candidate[]> {
     // TODO: send the message _after_ fetching the heroes
-    this.messageService.add('HeroService: fetched heroes');
-    return of(CANDIDATES);
+    this.messageService.add('CandidateService: fetched candidates');
+    return of(CANDIDATES1);
   }
 }

@@ -7,6 +7,7 @@ import { CandidatesComponent } from './candidates/candidates.component';
 
 import { CandidateDetailComponent } from './candidate-detail/candidate-detail.component';
 import { MessagesComponent } from './messages/messages.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { MessagesComponent } from './messages/messages.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [// no need to place any providers due to the `providedIn` flag...
      ],
